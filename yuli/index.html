@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yuli te quiero</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class='v-align'>
+  <div class='hero-btn'>
+    <button id="showTextButton" class='btn' onclick="mostrarTextoAmor()">Abreme aquí 😊</button>
+    <div id="textoAmor" class="texto-amor ocultar">Te quiero mucho mi niña, tengo muchas ganas de verte.<br>
+      Te extraño, cada momento que no estás a mi lado. No puedo esperar para abrazarte fuerte la próxima vez que nos veamos. En tan poco tiempo te convertiste en mi luz, mi alegría, mi todo. Espero con ansias vernos de nuevo, mi niña. Te quiero mucho.
+    </div>
+    <span class='particles-circle'></span>
+  </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+<script>
+  function mostrarTextoAmor() {
+    var boton = document.getElementById("showTextButton");
+    boton.style.display = "none";
+    var texto = document.getElementById("textoAmor");
+    texto.classList.remove("ocultar");
+  }
+</script>
+</body>
+</html>
